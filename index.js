@@ -8,9 +8,34 @@ var l = new Audio('./sounds/tom-4.mp3');
 
 
 for(var i = 0; i<document.querySelectorAll(".drum").length; i++) {
-document.querySelectorAll("button")[i].addEventListener("click", function (){
-    if(i === 1) {
-        w.play();
+document.querySelectorAll("button")[i].addEventListener("onkeydown", function (){
+
+    var innerHTML = this.innerHTML;
+
+    switch (innerHTML) {
+        case "w":
+            w.play();
+            break;
+        case "a":
+            a.play();
+            break;
+        case "s":
+            s.play();
+            break;
+        case "d":
+            d.play();
+            break;
+        case "j":
+            j.play();
+            break;
+        case "k":
+            k.play();
+            break;
+        case "l":
+            l.play();
+            break;
+        default:
+            break;
     }
 });
 }
