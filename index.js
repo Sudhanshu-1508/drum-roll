@@ -4,7 +4,7 @@ var s = new Audio('./sounds/snare.mp3');
 var d = new Audio('./sounds/tom-1.mp3');
 var j = new Audio('./sounds/tom-2.mp3');
 var k = new Audio('./sounds/tom-3.mp3');
-var l = new Audio('./sounds/tom-4.mp3');
+var l = new Audio('./sounds/fart.mp3');
 
 
 for(var i = 0; i<document.querySelectorAll(".drum").length; i++) {
