@@ -6,13 +6,12 @@ var j = new Audio('./sounds/tom-2.mp3');
 var k = new Audio('./sounds/tom-3.mp3');
 var l = new Audio('./sounds/fart.mp3');
 
-document.addEventListener("keydown", function(e){
+document.addEventListener("keypress", function(e){
     console.log(e);
     var key = e.key;
     switch (key) {
         case "w":
             w.play();
-            console.log("W pressed");
             break;
         case "a":
             a.play();
