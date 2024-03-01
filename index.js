@@ -6,15 +6,13 @@ var j = new Audio('./sounds/tom-2.mp3');
 var k = new Audio('./sounds/tom-3.mp3');
 var l = new Audio('./sounds/fart.mp3');
 
-
-for(var i = 0; i<document.querySelectorAll(".drum").length; i++) {
-document.querySelectorAll("button")[i].addEventListener("onkeydown", function (){
-
-    var innerHTML = this.innerHTML;
-
-    switch (innerHTML) {
+document.addEventListener("keydown", function(e){
+    console.log(e);
+    var key = e.key;
+    switch (key) {
         case "w":
             w.play();
+            console.log("W pressed");
             break;
         case "a":
             a.play();
@@ -38,4 +36,3 @@ document.querySelectorAll("button")[i].addEventListener("onkeydown", function ()
             break;
     }
 });
-}
